@@ -45,7 +45,7 @@ const Signup: React.FC = () => {
       const response = await signup(data);
 
       if (response?.success) {
-        toast.success("Welcome, Signup successful!");
+        toast.success(response?.message || "Signup successful");
 
         setTimeout(() => {
           router.push("/dashboard/home");
@@ -213,7 +213,7 @@ const Signup: React.FC = () => {
           <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
             <span className="mb-1.5 block font-medium">Start for free</span>
             <h2 className="mb-9 text-2xl font-bold text-black dark:text-white sm:text-title-xl2">
-              Sign Up to TailAdmin
+              Sign Up to eManage
             </h2>
 
             {/* ✅ Form Submission */}
