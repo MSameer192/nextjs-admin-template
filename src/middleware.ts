@@ -32,7 +32,6 @@ export function middleware(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
   matcher: [
-    "/",               // Matches the homepage
-    "/dashboard/:path*" // Matches all subpaths inside "/dashboard"
+    "/test",               // Matches the homepage
   ]
 }
